@@ -15,6 +15,7 @@
 
         props: {
             round: Boolean,
+            wide: Boolean,
             disabled: Boolean,
             icon: String,
         },
@@ -23,7 +24,8 @@
             css() {
                 return {
                     [this.$style._round]: this.round,
-                    [this.$style._disabled]: this.disabled
+                    [this.$style._disabled]: this.disabled,
+                    [this.$style._wide]: this.wide,
                 };
             }
         }
@@ -35,8 +37,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 3rem;
-        height: 3rem;
+        min-width: 3rem;
+        min-height: 3rem;
         margin: 0;
         padding: 0;
         color: white;
@@ -61,11 +63,15 @@
         &._disabled {
             opacity: 0.5;
         }
+
+        &._wide {
+            width: 100%;
+        }
     }
 
     .icon {
-        width: 50%;
-        height: 50%;
+        width: 1.5rem;
+        height: 1.5rem;
         fill: white;
     }
 </style>

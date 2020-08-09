@@ -1,5 +1,5 @@
 <template>
-    <section :class="$style.chat">
+    <section :class="$style.Chat">
         <ChatMessages
             v-if="messages.length"
             :class="$style.messages"
@@ -69,7 +69,7 @@
 </script>
 
 <style lang="scss" module>
-    .chat {
+    .Chat {
         display: flex;
         flex-flow: column;
         flex: 1 1 0;

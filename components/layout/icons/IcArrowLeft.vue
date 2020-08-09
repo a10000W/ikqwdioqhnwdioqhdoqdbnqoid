@@ -1,0 +1,5 @@
+<template>
+    <symbol id="ic-arrow-left" viewBox="0 0 24 24">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.41412 13L12.707 19.2929L11.2928 20.7071L2.58569 12L11.2928 3.29289L12.707 4.70711L6.41412 11H20.9999V13H6.41412Z" />
+    </symbol>
+</template>
